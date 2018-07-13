@@ -32,7 +32,7 @@ console.log(ability.can('delete', new Website())) // false
 If you would like to define abilities in own function, it'd better to use its `extract` method:
 
 ```js
-import { AbilityBuidler, Ability } from '@casl/abiltiy'
+import { AbilityBuilder, Ability } from '@casl/ability'
 
 function defineAbilityFor(user) {
   const { rules, can, cannot } = AbilityBuilder.extract()
